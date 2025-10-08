@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.container{
+    padding: 0 5%;
+}
+
+/* style for header */
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    padding: 20px 5%;
+    background: linear-gradient(45deg, #FFF9E5 0%, #FFD6C0 100%);
+}
+
+.header-hidden{
+    display: none;
+}
+
+.header .nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar .logo-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-box img{
+    width: 50px;
+}
+
+.logo-box .logo-text{
+    color: #420c08;
+}
+
+.logo-box .logo-text h4{
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+}
+
+.logo-box .logo-text h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 18px;
+}
+
+.logo-box .logo-text p{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+.nav-bar .nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.nav-links.show{
+    left: 0;
+}
+
+.nav-bar #menu-icon{
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-list li{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 15px;
+    transition: all ease 0.3s;
+}
+
+.nav-list li:hover{
+    color: #ff6f61;
+}
+
+@media (max-width: 777px){
+    .nav-bar .nav-links{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: -500px;
+        width: 300px;
+        height: 100vh;
+        flex-direction: column;
+        background: #fff;
+        align-items: center;
+        transition: all ease 0.3s;
+    }
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        align-items: center;
+        list-style: none;
+    }
+    .nav-list li{
+        font-size: 18px;
+        font-weight: 400;
+        margin: 15px 0;
+        transition: all ease 0.3s;
+    }
+    .nav-bar #menu-icon{
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .bx-x{
+        position: absolute;
+        top: 10px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 555px){
+    .nav-bar .nav-links{
+        width: 300px;
+    }
+}
+
+
+/* about section */
+
+.about-section{
+    width: 100%;
+    height: 50vh;
+    color: #fff;
+    display: flex;
+    align-items: end;
+    padding: 30px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.45), 
+    rgba(0,0,0,0.45), rgba(0,0,0,0.55),
+    rgba(0,0,0,0.65)), url(./images/student-union.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about-section .container h2{
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+/* history section styles */
+
+.history-section{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.history-section .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.image-box{
+    height: 550px;
+    position: relative;
+}
+
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-text{
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    padding: 10px;
+    background: rgba(255,255,255,0.45);
+    border-radius: 7px;
+    backdrop-filter: blur(10px);
+}
+
+.history-background h1{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.history-background .history-box{
+    margin-top: 20px;
+}
+
+.history-box h3{
+    color: #ff6f61;
+}
+
+.history-box p{
+    color: #333;
+    margin: 10px 0;
+}
+
+
+/* faq styling */
+
+.faq-section{
+    width: 100%;
+    padding: 70px 0;
+    line-height: 27px;
+}
+
+.faq-section .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.faq-section .container .faq-heading{
+    margin-bottom: 30px;
+}
+
+.faq-section .container .faq-heading .title{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    line-height: 40px;
+}
+
+.faq-section .container .faq-heading p{
+    color: #333;
+}
+
+.faq-container .faq-folder{
+    padding: 20px;
+    cursor: pointer;
+}
+
+.faq-folder .question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.faq-folder .question h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.faq-folder .question .fa{
+    font-size: 15px;
+    vertical-align: middle;
+    transition: all ease 0.3s;
+}
+
+.faq-folder.active .fa{
+    transform: rotate(180deg);
+}
+
+.faq-folder .faq-answer{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height ease 0.3s;
+}
+
+.faq-folder.active .faq-answer{
+    max-height: 300px;
+    animation: fade 0.5s ease-in-out;
+}
+
+.faq-folder .faq-answer p{
+    margin-top: 10px;
+    color: #333;
+    padding-top: 10px;
+    border-top: 1.2px solid #e5e5e5;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 555px){
+    .faq-container .faq-folder{
+        padding: 15px 0;
+    }
+}
+
+
+/* footer section styles */
+
+.footer-section{
+    width: 100%;
+    color: #e5e5e5;
+    padding: 70px 0;
+    background: #333;
+}
+
+.footer-section .container{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social-links{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-links i{
+    font-size: 30px;
+}
+
+.contact {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-box{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.contact-box i{
+    font-size: 30px;
+}
+
+
+@media (max-width:555px){
+    .footer-section .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contact {
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
