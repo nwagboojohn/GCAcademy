@@ -28,8 +28,8 @@ This website is built to serve as the official digital presence of Grand Master 
 ├── about.html        # About Us page
 ├── contact.html      # Landing page
 ├── css/
-│   └── style.css     # Main stylesheet
+│   └── gma.css     # Main stylesheet
 ├── js/
-│   └── main.js       # JavaScript functionalities
+│   └── gma.js       # JavaScript functionalities
 └── imagess/
     └── images.png/        # Campus photos and logos
