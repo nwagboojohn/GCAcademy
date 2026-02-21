@@ -32,5 +32,4 @@ This website is built to serve as the official digital presence of Grand Master 
 ├── js/
 │   └── main.js       # JavaScript functionalities
 └── imagess/
-    ├── images/   
     └── images.png/        # Campus photos and logos
