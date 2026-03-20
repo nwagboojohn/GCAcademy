@@ -6,7 +6,7 @@ A modern, responsive, and interactive website designed for Grand Master Academy 
 - [About the Project](#about-the-project)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
-- [Project Structure](#project-structure)
+- [Project Structure](#project-structure) 
 
 ## About the Project
 This website is built to serve as the official digital presence of Grand Master Academy. It provides essential information to students, parents, and prospective applicants, featuring an intuitive user interface that works seamlessly on desktop and mobile devices.
