@@ -1,6 +1,6 @@
 # Grand Master Academy Website
 
-A modern, responsive, and interactive website designed for Grand Master Academy to showcase academic programs, events, and staff information. 
+A modern, responsive, and interactive website designed for Grand Master Academy a Physical and Online school presence to showcase academic programs, events, and staff information. 
 
 ## Table of Contents
 - [About the Project](#about-the-project)
