@@ -21,7 +21,7 @@ This website is built to serve as the official digital presence of Grand Master 
 * **CSS3:** Styling, Flexbox/Grid for layout, and animations.
 * **JavaScript (Vanilla):** DOM manipulation and form validation.
 
-## Project Structure
+## Project Structure 
 ```text
 /
 ├── index.html        # Main landing page
